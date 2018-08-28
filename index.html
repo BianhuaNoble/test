@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>首页布局</title>
+  <link type="text/css" rel="styleSheet" href="index样式.css"/>
+ </head>
+ <body>
+  <header>
+	<div>
+		<img src="images/logo.jpg" />
+		<p id="hdes">郑&nbsp;州&nbsp;大&nbsp;学</p>
+		
+	</div>
+  </header>
+  <nav>
+	<ul>
+		<li><a href="index.html" target="_parent">首页</a></li>
+		<li><a href="register.html" target="_parent">注册</a></li>
+		<li><a href="video.html" target="_parent">精彩视频</a></li>
+		<li><a href="zodiac.html" target="_parent">拖放实现</a></li>
+		<li><a href="article.html" target="_parent">文章发布</a></li>
+		<li><a href="fengche.html" target="_parent">彩色风车</a></li>
+	</ul>
+  </nav>
+  <div id="mainContent">
+  	<div id="left">
+		<div id="hua">
+			
+		</div>
+		<section id="bottom">
+			<header>最新精彩内容</header>
+			<figure>
+				<a href="#"><img src="images/a1.jpg" /></a>
+				<figcaption>
+				<h3><a href="#">郑大毕业季</a></h3>
+				<p>那光阴，沧海桑田，远走高飞，再没力气追，今年轮到你毕业了。
+				每一年都有人毕业，每一年都有人哭着离开学校，从前你站在远处空旷的操场上</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="#"><img src="images/a2.jpeg" /></a>
+				<figcaption>
+				<h3><a href="#">眉湖小屋</a></h3>
+				<p>新建的眉湖小屋很受同学们的欢迎，在炎热的夏天，在眉湖小屋点一杯饮料，冰霜可口</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="#"><img src="images/a3.jpg" /></a>
+				<figcaption>
+				<h3><a href="#">荷花开了</a></h3>
+				<p>郑州大学景色秀美，最近几天荷花也开了，游客争相竞往，
+				鲜嫩的荷花在微风吹佛下左右摇摆，好不美丽，“出淤泥而不染，濯清涟而不妖”</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<a href="#"><img src="images/a4.jpg" /></a>
+				<figcaption>
+				<h3><a href="#">郑大校友返校</a></h3>
+				<p>郑州大学有雄厚的办学基础，培育了一届又一届的优秀学子，正值校友返校周，
+				郑大新建的校史馆也对外开放，不少校友前去参观，感叹时光已逝</p>
+				</figcaption>
+			</figure>
+			
+		</section>
+  	</div>
+	<div id="right">
+		<form>
+		<aside>
+			<header>
+				<h1>登录</h1>
+				<p>请准确填写个人信息</p>
+			</header>
+			<div id="login">
+				<label>用户名：</label>
+				<input name="name" id="key" type="text" />
+				<label>密码：</label>
+				<input name="password" id="value" type="password" />
+				<input type="button" value="登录" onClick="Login()"/>
+			</div>
+		</aside>
+		</form>
+		<aside id="pie">
+			<p>画布时钟</p>
+			<div class="clocks">
+            <canvas id="myCanvas" width="300" height="300"></canvas>
+			<script src="script/clocks.js" ></script>
+        </div>
+		</aside>
+		
+		
+	</div>
+  </div>
+  <footer>
+  <p>郑州大学  版权所有</p>
+  </footer>
+ </body>
+</html>
+
